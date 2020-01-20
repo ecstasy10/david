@@ -25,7 +25,9 @@
     
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="https://kit.fontawesome.com/21b5751b50.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
@@ -35,40 +37,67 @@
 			<h1 id="colorlib-logo"><a href="index.html">D<span>.</span></a></h1>
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li class="colorlib-active"><a href="index.html">Home</a></li>
-					<li><a href="photography.html">Portofolio</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li class="colorlib-active"><a href="#colorlib-main">Home</a></li>
+					<li><a href="#contacto">Contacto & CV</a></li>
+					<li><a href="#portofolio">Portofolio</a></li>
+					<li><a href="#sobreMi">Sobre Mi</a></li>
 				</ul>
 			</nav>
 		</aside> <!-- END COLORLIB-ASIDE -->
 		<div id="colorlib-main">
-			<div class="hero-wrap js-fullheight" style="background-image: url(images/bg_1.jpg);" data-stellar-background-ratio="0.5">
+			<div class="hero-wrap js-fullheight" style="background-image: url(images/bg_1.jpg);">
 				<div class="overlay"></div>
 				<div class="js-fullheight d-flex justify-content-center align-items-center">
 					<div class="col-md-8 text text-center">
 						<div class="img mb-4" style="background-image: url(images/author.jpg);"></div>
 						<div class="desc">
 							<h1 class="mb-4">David Balboa Rojo</h1>
-							<p class="mb-4">
+							<p class="mb-4" style="color: rgb(82, 82, 82)">
 								Programando en 42Madrid! Siempre en la busqueda de algo mejor.
 								Estudiante en la actualidad con ideas de crear un negocio propio.
 							</p>
-							<p><a href="#" class="btn-custom">More About Me <span class="ion-ios-arrow-down"></span></a></p>
+							<p><a href="#portofolio" class="btn-custom" style="color: rgb(82, 82, 82)">Portfolio Web &NonBreakingSpace;<span class="ion-ios-arrow-down"></span></a></p>
+							<p><a href="#contacto" class="btn-custom" style="color: rgb(82, 82, 82)">Contacto &NonBreakingSpace;<span class="ion-ios-arrow-down"></span></a></p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<section class="ftco-section">
-    	<div class="container">
-    		<div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-7 heading-section text-center ftco-animate">
+    	<div class="container" >
+				<div class="row d-flex mb-5 contact-info" id="contacto">
+						<div class="col-md-12 mb-4">
+						  <h2 class="h4 font-weight-bold">Contacto & CV</h2>
+						</div>
+						<div class="w-100"></div>
+						<div class="col-md-2">
+						  <p><i class="fas fa-map-marker-alt" style="font-size: 2em;"></i>&NonBreakingSpace; Tres Cantos, Madrid (España)</p>
+						</div>
+						<div class="col-md-3">
+						  <p><i class="fas fa-phone-alt" style="font-size: 2em;"></i>&NonBreakingSpace; <a href="tel://622243046">+34 622 243 046</a> <br> <br>
+							<button type="button" class="btn btn-dark" onclick="copyToClipboard('#id-tel')"><i class="fas fa-copy"></i> Copiar Teléfono</button></p>
+						</div>
+						<div class="col-md-4">
+						  <p><i class="fas fa-at" style="font-size: 2em;"></i>&NonBreakingSpace; <a href="mail://david.balboa.rojo@gmail.com">david.balboa.rojo@gmail.com</a> <br> <br>
+							<button type="button" class="btn btn-dark" onclick="copyToClipboard('#id-mail')"><i class="fas fa-copy"></i> Copiar eMail</button></p>
+						</div>
+						<div class="col-md-3">
+						  <p><i class="fas fa-file-download" style="font-size: 2em;"></i> &NonBreakingSpace;
+							<a href="cv/CV-DavidBalboaRojo-ES.pdf" download="CV-DavidBalboaRojo-ES.pdf">
+							Descarga mi Curriculum</a> &NonBreakingSpace;</span>
+							<br> <br>
+							<a href="cv/CV-DavidBalboaRojo-ES.pdf" download="CV-DavidBalboaRojo-ES.pdf">
+							<button type="button" class="btn btn-dark"><i class="fas fa-copy"></i> Descargar CV</button></a></p>
+						</div>
+					  </div>
+					  <hr>
+    		<div class="row justify-content-center mb-5 pb-2" id="portofolio">
+          <div class="col-md-7 heading-section text-center ftco-animate" >
             <h2 class="mb-4">Portofolio</h2>
             <p>Echa un vistazo a mis proyectos, algunos están terminados y otros en proceso.</p>
           </div>
         </div>
-    		<div class="row">
-    			<div class="col-md-4">
+    		<div class="row" >
+    			<div class="col-md-4" id="id-n4s">
     				<div class="blog-entry ftco-animate">
 							<a href="https://dwec-19-20.github.io/invitacionevento-crackheads/" target="_blank" class="img img-2"
 								style="background-image: url(images/image_1.jpg);"></a>
@@ -92,35 +121,83 @@
 	            </div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="blog-entry ftco-animate">
-						<a href="https://dwec-19-20.github.io/calc-date-project-davidbalboa-carlosasenjo/" target="_blank"
-							class="img img-2"
-							style="background-image: url(images/image_2.jpg);"></a>
-						<div class="text text-2 pt-2 mt-3">
-							<span class="category mb-3 d-block"><a
-									href="https://dwec-19-20.github.io/calc-date-project-davidbalboa-carlosasenjo/" target="_blank">
-									Calculadora de fechas</a></span>
-							<h3 class="mb-4"><a
-									href="https://dwec-19-20.github.io/calc-date-project-davidbalboa-carlosasenjo/" target="_blank">
-									CalcDate</a></h3>
-							<p class="mb-4">
-								Calculadora de fechas la cual te permitirá contar dias dependiendo de tu preferencia,
-								se incluyen dos categorias, dias lectivos y no-lectivos.
-							</p>
-							<div class="meta-wrap align-items-center">
-								<div class="half">
-									<p><a href="https://dwec-19-20.github.io/calc-date-project-davidbalboa-carlosasenjo/"
-											target="_blank" class="btn py-2">
+				<div class="col-md-4" id="id-tetris">
+						<div class="blog-entry ftco-animate">
+							<a href="https://dwec-19-20.github.io/juegotetris-tetrishead/" target="_blank" class="img img-2"
+								style="background-image: url(images/image_7.jpg);"></a>
+							<div class="text text-2 pt-2 mt-3">
+								<span class="category mb-3 d-block"><a href="https://dwec-19-20.github.io/juegotetris-tetrishead/" target="_blank">
+										El famoso juego</a></span>
+								<h3 class="mb-4"><a href="https://dwec-19-20.github.io/juegotetris-tetrishead/" target="_blank">
+										Tetris</a></h3>
+								<p class="mb-4">
+									Recreación del juego original Tetris desde cero, sin plantilla y sin librerias a parte.
+									Cuidado con el volumen!
+								</p>
+								<div class="meta-wrap align-items-center">
+									<div class="half">
+										<p><a href="https://dwec-19-20.github.io/juegotetris-tetrishead/" target="_blank" class="btn py-2">
 											Ver Proyecto <span class="ion-ios-arrow-forward"></span></a></p>
-									<p><a href="https://github.com/DWEC-19-20/calc-date-project-davidbalboa-carlosasenjo"
-											target="_blank" class="btn py-2">
+										<p><a href="https://github.com/DWEC-19-20/juegotetris-tetrishead" target="_blank" class="btn py-2">
 											Ver Repositorio <span class="ion-ios-arrow-forward"></span></a></p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+					<div class="col-md-4" id="id-login">
+						<div class="blog-entry ftco-animate">
+							<a href="https://itsnotlonee.github.io/form/" target="_blank" class="img img-2"
+								style="background-image: url(images/image_4.jpg);"></a>
+							<div class="text text-2 pt-2 mt-3">
+								<span class="category mb-3 d-block"><a href="https://itsnotlonee.github.io/form/" target="_blank">
+										Formulario Registro & Login</a></span>
+								<h3 class="mb-4"><a href="https://itsnotlonee.github.io/form/" target="_blank">
+										Register & Login</a></h3>
+								<p class="mb-4">
+									Pasarela de registro y Login usando cookies para almacenar la información
+									del usuario siendo asi persistente, simple.
+								</p>
+								<div class="meta-wrap align-items-center">
+									<div class="half">
+										<p><a href="https://itsnotlonee.github.io/form/" target="_blank" class="btn py-2">
+												Ver Proyecto <span class="ion-ios-arrow-forward"></span></a></p>
+										<p><a href="https://github.com/itsnotLonee/form" target="_blank" class="btn py-2">
+												Ver Repositorio <span class="ion-ios-arrow-forward"></span></a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4" id="id-calc">
+						<div class="blog-entry ftco-animate">
+							<a href="https://dwec-19-20.github.io/calc-date-project-davidbalboa-carlosasenjo/" target="_blank"
+								class="img img-2"
+								style="background-image: url(images/image_2.jpg);"></a>
+							<div class="text text-2 pt-2 mt-3">
+								<span class="category mb-3 d-block"><a
+										href="https://dwec-19-20.github.io/calc-date-project-davidbalboa-carlosasenjo/" target="_blank">
+										Calculadora de fechas</a></span>
+								<h3 class="mb-4"><a
+										href="https://dwec-19-20.github.io/calc-date-project-davidbalboa-carlosasenjo/" target="_blank">
+										CalcDate</a></h3>
+								<p class="mb-4">
+									Calculadora de fechas la cual te permitirá contar dias dependiendo de tu preferencia,
+									se incluyen dos categorias, dias lectivos y no-lectivos.
+								</p>
+								<div class="meta-wrap align-items-center">
+									<div class="half">
+										<p><a href="https://dwec-19-20.github.io/calc-date-project-davidbalboa-carlosasenjo/"
+												target="_blank" class="btn py-2">
+												Ver Proyecto <span class="ion-ios-arrow-forward"></span></a></p>
+										<p><a href="https://github.com/DWEC-19-20/calc-date-project-davidbalboa-carlosasenjo"
+												target="_blank" class="btn py-2">
+												Ver Repositorio <span class="ion-ios-arrow-forward"></span></a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				<div class="col-md-4">
 					<div class="blog-entry ftco-animate">
 						<a href="https://itsnotlonee.github.io/christmas/" target="_blank"
@@ -150,30 +227,6 @@
 				</div>
 				<div class="col-md-4">
 					<div class="blog-entry ftco-animate">
-						<a href="https://itsnotlonee.github.io/form/" target="_blank" class="img img-2"
-							style="background-image: url(images/image_4.jpg);"></a>
-						<div class="text text-2 pt-2 mt-3">
-							<span class="category mb-3 d-block"><a href="https://itsnotlonee.github.io/form/" target="_blank">
-									Formulario Registro & Login</a></span>
-							<h3 class="mb-4"><a href="https://itsnotlonee.github.io/form/" target="_blank">
-									Register & Login</a></h3>
-							<p class="mb-4">
-								Pasarela de registro y Login usando cookies para almacenar la información
-								del usuario siendo asi persistente, simple.
-							</p>
-							<div class="meta-wrap align-items-center">
-								<div class="half">
-									<p><a href="https://itsnotlonee.github.io/form/" target="_blank" class="btn py-2">
-											Ver Proyecto <span class="ion-ios-arrow-forward"></span></a></p>
-									<p><a href="https://github.com/itsnotLonee/form" target="_blank" class="btn py-2">
-											Ver Repositorio <span class="ion-ios-arrow-forward"></span></a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="blog-entry ftco-animate">
 						<a href="https://github.com/itsnotLonee/binge" target="_blank" class="img img-2"
 							style="background-image: url(images/image_5.jpg);"></a>
 						<div class="text text-2 pt-2 mt-3">
@@ -182,7 +235,7 @@
 							<h3 class="mb-4"><a href="https://github.com/itsnotLonee/binge" target="_blank">
 									Binge</a></h3>
 							<p class="mb-4">
-								Proyecto en curso el cual no he podido despegar todavia. Plataforma web para ver peliculas o series
+								<b>Proyecto en curso el cual no he podido desarrollar por cierre de evaluación.</b>  Plataforma web para ver peliculas o series
 								dos personas sincronizadamente desde diferentes ordeandores.
 							</p>
 							<div class="meta-wrap align-items-center">
@@ -194,45 +247,166 @@
 						</div>
 					</div>
 				</div>
+				<div class="col-md-4">
+						<div class="blog-entry ftco-animate">
+							<a href="https://dwec-19-20.github.io/pick-color-davidbalboa/index.html" target="_blank" class="img img-2"
+								style="background-image: url(images/image_6.jpg);"></a>
+							<div class="text text-2 pt-2 mt-3">
+								<span class="category mb-3 d-block"><a href="https://dwec-19-20.github.io/pick-color-davidbalboa/index.html" target="_blank">
+										Selecciona o busca el color que quieras</a></span>
+								<h3 class="mb-4"><a href="https://dwec-19-20.github.io/pick-color-davidbalboa/index.html" target="_blank">
+										Color Picker</a></h3>
+								<p class="mb-4">
+									Programa para seleccionar un color, buscarlo, y poder obtener su código Hexadecimal o RGB.
+								</p>
+								<div class="meta-wrap align-items-center">
+									<div class="half">
+										<p><a href="https://dwec-19-20.github.io/pick-color-davidbalboa/index.html" target="_blank" class="btn py-2">
+											Ver Proyecto <span class="ion-ios-arrow-forward"></span></a></p>
+										<p><a href="https://github.com/DWEC-19-20/pick-color-davidbalboa" target="_blank" class="btn py-2">
+											Ver Repositorio <span class="ion-ios-arrow-forward"></span></a></p>
+									</div>
+								</div>
+							</div>
 						</div>
+					</div>
+					<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								<a href="https://dwec-19-20.github.io/pick-color-davidbalboa/index.html" target="_blank" class="img img-2"
+									style="background-image: url(images/image_9.jpg);"></a>
+								<div class="text text-2 pt-2 mt-3">
+									<span class="category mb-3 d-block"><a href="https://dwec-19-20.github.io/pick-color-davidbalboa/index.html" target="_blank">
+											Recreación de las librerias de C</a></span>
+									<h3 class="mb-4"><a href="https://dwec-19-20.github.io/pick-color-davidbalboa/index.html" target="_blank">
+											Libft</a></h3>
+									<p class="mb-4">
+										Proyecto de recreación de librerias de C. Contiene un total de 40 funciones distintas, manejando memoria y buffers.
+									</p>
+									<div class="meta-wrap align-items-center">
+											<div class="half">
+												<p><a href="https://github.com/itsnotLonee/libft" target="_blank" class="btn py-2">
+													Ver Repositorio <span class="ion-ios-arrow-forward"></span></a></p>
+											</div>
+										</div>
+								</div>
+							</div>
+						</div>
+					<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								<a href="https://dwec-19-20.github.io/pick-color-davidbalboa/index.html" target="_blank" class="img img-2"
+									style="background-image: url(images/image_8.jpg);"></a>
+								<div class="text text-2 pt-2 mt-3">
+									<span class="category mb-3 d-block"><a href="https://dwec-19-20.github.io/pick-color-davidbalboa/index.html" target="_blank">
+											Web Personal</a></span>
+									<h3 class="mb-4"><a href="https://dwec-19-20.github.io/pick-color-davidbalboa/index.html" target="_blank">
+											Esta página web</a></h3>
+									<p class="mb-4">
+										Crear esta web personal me ayudó a manejar aspectos los cuales desconocía de Bootstrap y JQuery.
+									</p>
+								</div>
+							</div>
+						</div>
+						</div>
+
+					<!-- START ABOUT ME-->
+
+
+					<div class="row" id="sobreMi">
+							<div class="col-lg-8 ftco-animate">
+						<h2 class="mb-3 font-weight-bold">Sobre Mi</h2>
+						<p>Siempre tengo algo que hacer, no me gusta la monotonía, prefiero explorar nuevos caminos.</p>
+						<p>
+							La mayor parte de mi <b>tiempo</b> la dedico a mi futuro y a los estudios, paso una gran cantidad de horas
+							programando ya que me divierte bastante. En mis ratos libres, me gusta hacer deporte, juego en un equipo
+							aficionado de futbol sala, paso tiempo con mi familia y amigos.
+						</p>
+						<p>
+						  <img src="images/about_me.jpg" alt="" class="img-fluid">
+						</p>
+						<p>Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt doloribus
+							 nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo eum ullam incidunt
+							 rem assumenda eveniet eaque sequi deleniti tenetur dolore amet fugit perspiciatis ipsa, odit. Nesciunt dolor
+							 minima esse vero ut ea, repudiandae suscipit!</p>
+						
+		
+					  </div> <!-- .col-md-8 -->
+					<div class="col-lg-4 sidebar ftco-animate">
+		
+						<div class="sidebar-box ftco-animate">
+						  <h3 class="sidebar-heading">Proyectos recomendados</h3>
+						  <div class="block-21 mb-4 d-flex">
+							<a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+							<div class="text">
+							  <h3 class="heading"><a href="#">Need4Speed</a></h3>
+							  <div class="meta">
+								<div><span>Invitaciones para evento.</span></div>
+								<div><a href="#"><span class="icon-check"></span> Finalizado</a></div>
+							  </div>
+							</div>
+						  </div>
+						  <div class="block-21 mb-4 d-flex">
+							<a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+							<div class="text">
+							  <h3 class="heading"><a href="#">Tetris</a></h3>
+							  <div class="meta">
+								<div><span>El famoso juego.</span></div> <br>
+								<div><a href="#"><span class="icon-check"></span> Finalizado</a></div>
+							  </div>
+							</div>
+						  </div>
+						  <div class="block-21 mb-4 d-flex">
+								<a class="blog-img mr-4" style="background-image: url(images/github.jpg);"></a>
+								<div class="text">
+								  <h3 class="heading"><a href="https://github.com/itsnotLonee/ft_printf">ft_printf</a></h3>
+								  <div class="meta">
+									<div><span>Proyecto basado en recrear la función printf() de C.</span></div>
+									<div><a href="https://github.com/itsnotLonee/ft_printf"><span class="icon-check"></span> En proceso</a></div>
+								  </div>
+								</div>
+							  </div>
+						</div>
+		
+						<div class="sidebar-box ftco-animate">
+						  <h3 class="sidebar-heading">Busqueda rápida</h3>
+						  <ul class="tagcloud">
+							<a href="#contacto" class="tag-cloud-link">CV</a>
+							<a href="#id-tetris" class="tag-cloud-link">Tetris</a>
+							<a href="#id-n4s" class="tag-cloud-link">Need4Speed</a>
+							<a href="#id-login" class="tag-cloud-link">Login&Register</a>
+							<a href="#id-calc" class="tag-cloud-link">CalcDate</a>
+							<a href="#sobreMi" class="tag-cloud-link">Sobre Mi</a>
+							<a href="#id-aficiones" class="tag-cloud-link">Aficiones</a>
+							<a href="#id-insp" class="tag-cloud-link">Inspiración</a>
+						  </ul>
+						</div>
+		
+						<div class="sidebar-box ftco-animate">
+						  <h3 class="sidebar-heading">Frase</h3>
+						  <p>« Such a waste of talent. He chose money over power - in this town, a mistake nearly everyone makes. 
+							  Money is the McMansion in Sarasota that starts falling apart after 10 years. 
+							  Power is the old stone building that stands for centuries. I cannot respect someone who does not see the difference »</p>
+						  <div><a href="https://www.youtube.com/watch?v=LYnnm3L12fA">Escena House of Cards <i class="fab fa-youtube"></i></a></div>
+						</div>
+					  </div>
+					</div>
+
+					<!-- END ABOUT ME-->
     			</div>
     		</div>
-    	</div>
-    </section>
+		</div>
+		
+	</section>
+	
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container px-md-5">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Category</h2>
-              <ul class="list-unstyled categories">
-                <li><a href="#">Photography <span>(6)</span></a></li>
-                <li><a href="#">Fashion <span>(8)</span></a></li>
-                <li><a href="#">Technology <span>(2)</span></a></li>
-                <li><a href="#">Travel <span>(2)</span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Archives</h2>
-              <ul class="list-unstyled categories">
-              	<li><a href="#">October 2018 <span>(6)</span></a></li>
-                <li><a href="#">September 2018 <span>(6)</span></a></li>
-                <li><a href="#">August 2018 <span>(8)</span></a></li>
-                <li><a href="#">July 2018 <span>(2)</span></a></li>
-                <li><a href="#">June 2018 <span>(7)</span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
+          <div class="col-md"></div>
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<h2 class="ftco-heading-2">Contacto Rápido</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Tres Cantos, Madrid (España)</span></li> 
+	                <li><a href=""><span class="icon icon-phone"></span><span class="text" id="id-tel">+34 622 243 046</span></a> <button type="button" class="btn btn-light" onclick="copyToClipboard('#id-tel')"><i class="fas fa-copy"></i> Copiar Teléfono</button></li>
+	                <li><a href="mailto:david.balboa.rojo@gmail.com"><span class="icon icon-envelope"></span><span class="text" id="id-mail">david.balboa.rojo@gmail.com</span></a><button type="button" class="btn btn-light" onclick="copyToClipboard('#id-mail')"><i class="fas fa-copy"></i> Copiar eMail</button></li>
 	              </ul>
 	            </div>
             </div>
@@ -246,7 +420,7 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-
+  <script src="js/background.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
